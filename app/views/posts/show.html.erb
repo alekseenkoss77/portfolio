@@ -1,0 +1,9 @@
+<div class="post">
+  <h1 class="title"><%= @post.title %></h1>
+  <div class="body">
+    <%= raw @post.body %>
+  </div>
+  <%= render 'after', :post => @post %>
+</div>
+
+<%= render 'sidebar' %>

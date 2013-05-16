@@ -1,0 +1,19 @@
+<div class="clear"></div>
+<div class="after">
+  <div class="category left">
+    <i class="icon-tag"></i>
+    <%= link_to post.category.title, blog_path(:category_id => post.category.id) %>
+  </div>
+  <div class="date left">
+    <i class="icon-calendar"></i>
+    <%= Russian::strftime(post.date, "%d %B %Y в %H : %M") %>
+  </div>
+  <div class="comment-count left">
+    <i class="icon-comment"></i>
+    <%= post.comments.count %> <%= Russian.p(post.comments.count, "Комментарий", "Комментария", "Комментариев") %>
+  </div>
+  <div class="read-more right red">
+    <%= link_to "подробнее", show_post_path(post.category.slug,post.slug)  %>
+  </div>
+  <div class="clear"></div>
+</div>

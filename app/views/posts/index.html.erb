@@ -1,0 +1,13 @@
+<%= render 'sidebar' %>
+<div class="blog">
+  <% @posts.each do |post| %>
+    <div class="topic">
+      <div class="ava"><%= image_tag post.avatar.url(:small) %></div>
+      <div class="title"><%= link_to post.title, show_post_path(post.category.slug,post.slug) %></div>
+      <div class="description">
+        <%= truncate(post.description.html_safe, :length => 390) %>
+      </div>
+      <%= render 'after', :post => post %>
+    </div>
+  <% end %>
+</div>

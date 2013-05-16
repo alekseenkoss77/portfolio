@@ -1,0 +1,191 @@
+@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings.png");
+@iconWhiteSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings-white.png");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+// Note: If you use asset_path() here, your compiled bootstrap_and_overrides.css will not
+//       have the proper paths. So for now we use the absolute path.
+@fontAwesomeEotPath: asset-path("fontawesome-webfont.eot?v=3.0.2");
+@fontAwesomeEotPath_iefix: asset-path("fontawesome-webfont.eot?#iefix&v=3.0.2");
+@fontAwesomeWoffPath: asset-path("fontawesome-webfont.woff?v=3.0.2");
+@fontAwesomeTtfPath: asset-path("fontawesome-webfont.ttf?v=3.0.2");
+
+// Font Awesome
+@import "fontawesome";
+
+body {
+  background: url(bg.jpg);
+}
+
+h1 {
+  font-family: 'Fondamento', cursive;
+  font-size: 68px;
+}
+
+.row .middle, .big, .small, .side {
+  background: white;
+  border: 2px solid #00ADFF;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+.big {
+  width: 1140px;
+  height: 200px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.side h4 {
+  margin-top: 20px;
+}
+
+.side {
+  width: 540px;
+  height: 440px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.row.cnt {
+  
+}
+
+.left  {float:left;}
+.right {float:right;}
+
+.blog {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.blog .ava {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 23px;
+  color: gray;
+}
+
+.post {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.body {
+  margin-bottom: 20px;
+}
+
+.title a {
+  font-family: 'Noto Sans', sans-serif;
+  color: gray;
+}
+.topic {margin-top: 40px;}
+
+.after {
+  border-bottom: 1px solid #E9E9E9;
+  border-top: 1px solid #E9E9E9;
+  padding: 5px;
+}
+
+.date {
+  font-style: italic;
+  color: gray;
+}
+
+.comment-count {
+  color: gray;
+}
+
+i {color: black;}
+
+.after .left {margin-left: 10px; margin-right: 10px;}
+
+.description {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.ava {border: 10px solid #E7E7E7;}
+
+.small {
+  border-radius: 5px;
+  padding: 10px;
+  height: 200px;
+  width: 550px;
+  margin-bottom: 20px;
+}
+.middle {
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 30px;
+  width: 543px;
+}
+
+.logo1 {float: left;}
+
+.personal {
+  float: right;
+  margin-top: 20px;
+  margin-right: 9px;
+}
+
+.span12.content {
+  min-height: 600px;
+  background: white;
+  margin-bottom: 40px;
+  margin-left: 0px;
+  margin-top: 30px;
+  box-shadow: 4px 3px 10px -2px;
+}
+
+.breadcrumbs {
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.span3.right {
+  margin-right: 40px;
+  margin-top: 30px;
+}
+.categories {
+  border-top: 10px solid gray;
+  padding-top: 10px;
+}
+
+.categories ul li {
+  list-style: none;
+  margin-bottom: 6px;
+  font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+  color: #5B5B5B;
+  text-transform: uppercase;
+}
+
+.head {
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.code {
+  padding: 10px;
+  background: #F1F1F1;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.red a{
+  color: red;
+}
